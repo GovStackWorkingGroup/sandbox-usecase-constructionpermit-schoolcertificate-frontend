@@ -1,0 +1,664 @@
+{
+  "en": "Eng",
+  "fr": "Fr",
+  "de": "De",
+  "est": "Est",
+  "hero": {
+    "title": "Welcome to Digital Island eGov Portal",
+    "Description": "Your Gateway to Government Services"
+  },
+  "announcements": {
+    "title": "Announcements",
+    "previous": "Previous announcements",
+    "ann1": "Emergency Contact Numbers Updated",
+    "ann2": "New Tax Filing Deadline: August 15",
+    "ann3": "Online Utility Bill Payments Active",
+    "ann4": "Community Cleanup Event: Join Us",
+    "ann5": "Elderly Care Survey - Participate Now"
+  },
+  "topics": {
+    "title": "Topics",
+    "healthcare": {
+      "title": "Healthcare",
+      "description": "Access quality healthcare services and resources to support your well-being and that of your loved ones."
+    },
+    "housing": {
+      "title": "Housing",
+      "description": "Access government services for housing solutions, construction permits, regulations, and more, tailored to meet your needs."
+    },
+    "education": {
+      "title": "Education",
+      "description": "Access school information, academic records, and learning support on Digital Island."
+    },
+    "benefits-social-services": {
+      "title": "Benefits and Social Services",
+      "description": "Explore a range of social services and benefits designed to enhance your quality of life and provide essential support."
+    },
+    "identity-family": {
+      "title": "Identity and Family",
+      "description": "Manage your identity documents, family records, and important documents through secure and convenient online services."
+    },
+    "business-labor": {
+      "title": "Business and Labor",
+      "description": "Navigate the world of business and employment with tools and resources tailored to entrepreneurs, workers, and employers."
+    },
+    "travel-transformation": {
+      "title": "Travel and Transformation",
+      "description": "Navigate change with our government services, covering travel, relocations, transformations and visa assistance."
+    },
+    "money-property": {
+      "title": "Money and Property",
+      "description": "Manage your financial matters and property assets effectively using our digital tools and information."
+    },
+    "crime-justice-law": {
+      "title": "Crime, Justice and Law",
+      "description": "Access legal services, information on rights and responsibilities, and participate in the justice system of Digital Island."
+    }
+  },
+  "popular-services": {
+    "title": "Popular Services",
+    "construction-permit": "Construction Permit",
+    "highschool-graduation-certificate": "High School Graduation Certificate Inquiry",
+    "visa-application": "Visa application hub",
+    "social-welfare": "Social welfare programs",
+    "residence-registration": "Registration of residence",
+    "income-tax-returns": "Income tax returns",
+    "search": "Search Services"
+  },
+  "recent-activity": {
+    "title": "Recent Activity",
+    "no-activity": "No Recent Activity",
+    "fetch-error": "OOPS! Something went wrong! :("
+  },
+  "login": {
+    "title": "Log In to e-Gov Portal",
+    "description": "Secure authentication for e-gov services",
+    "id": "ID Number",
+    "password": "e-Gov Password",
+    "forgotten-password": "Forgot Password?"
+  },
+  "header": {
+    "title": "DIGITAL ISLAND",
+    "heading": "E-GOV PORTAL",
+    "open-menu": "Open menu"
+  },
+  "footer": {
+    "digital-island": "©GIZ 2023",
+    "contact-us": "Contact Us",
+    "give-feedback": "Give Feedback",
+    "data-protection": "Data Protection"
+  },
+  "construction-permit": {
+    "apply-online": "Apply Online",
+    "login-to-access-service": "Log in to access the service.",
+    "description": "In compliance with building codes, Digital Island's Construction Permit Service provides a streamlined process for obtaining permits for your construction, renovation, or demolition projects. Submit applications securely online, ensuring a seamless experience backed by our commitment to regulatory adherence.",
+    "tabs": {
+      "required-documents": {
+        "title": "Required Documents",
+        "description": "To initiate the application process for your construction permit, please ensure you have the following required documents ready for submission",
+        "item1": "Identification of the property owner, principal contractor and lead architect/engineer"
+      },
+      "required-fees": {
+        "title": "Required Fees",
+        "description": "",
+        "desc1": "Upon successful scrutiny of your application, the system will automatically calculate the required permit fee based on the specifics of your construction project",
+        "payment-fee": "How payment fee is calculated?"
+      },
+      "alternative-access-support": {
+        "title": "Alternative Access and Support",
+        "desc1": "If it is not possible to use the e-Gov service or submit the documents in a digital medium, the application can be done via the city planning department.",
+        "desc2": "Additionally, please feel free to use the provided contact information for any questions or inquiries you may have.",
+        "service-providers": {
+          "title": "Service Providers",
+          "address": "Address",
+          "website": "Website URL",
+          "service-area": "Service Area",
+          "city-planning-dept": "City Planning Department"
+        }
+      },
+      "similar-services": {
+        "title": "Similar Services",
+        "description": ""
+      }
+    },
+    "approved": {
+      "congratulations": "Congratulations!",
+      "approved-permit": "Your Construction Permit is Approved.",
+      "description": "Your construction permit application has been successfully reviewed and approved. This means you have been granted permission to proceed with your construction project as outlined in your application.",
+      "desc1": "In case of any modifications or changes to the approved plans, please seek necessary approvals",
+      "desc2": "You can find your construction permit via",
+      "desc3": "For any inquiries or assistance, please reach out to our",
+      "support": "support",
+      "team": "team",
+      "download-permit": "Download your construction permit (.pdf)"
+    }
+  },
+  "highschool-graduation-certificate": {
+    "apply-online": "Access Certificate Services",
+    "login-to-access-service": "Log in to access the service.",
+    "description": "Welcome to the High School Graduation Certificate Inquiry service provided by the Digital Island government. ",
+    "desc1": "This service allows individuals who have successfully graduated from high school to obtain their high school certificate for various purposes, including visa applications, job applications, and more.",
+    "desc2": "First time applying ? Generate your high school certificate now.",
+    "tabs": {
+      "required-documents": {
+        "title": "Required",
+        "description": "To be added !",
+        "item1": "To be added !"
+      },
+      "required-fees": {
+        "title": "Required Fees",
+        "description": "To be added !",
+        "desc1": "To be added !",
+        "payment-fee": "To be added !"
+      },
+      "alternative-access-support": {
+        "title": "Alternative Access and Support",
+        "desc1": "To be added !",
+        "desc2": "To be added !",
+        "service-providers": {
+          "title": "Service Providers",
+          "address": "Address",
+          "website": "Website URL",
+          "service-area": "Service Area",
+          "city-planning-dept": "City Planning Department"
+        }
+      },
+      "similar-services": {
+        "title": "Similar Services",
+        "description": "To be added"
+      }
+    },
+    "approved": {
+      "congratulations": "Congratulations!",
+      "approved-permit": "Your Construction Permit is Approved.",
+      "description": "Your construction permit application has been successfully reviewed and approved. This means you have been granted permission to proceed with your construction project as outlined in your application.",
+      "desc1": "In case of any modifications or changes to the approved plans, please seek necessary approvals",
+      "desc2": "You can find your construction permit via",
+      "desc3": "For any inquiries or assistance, please reach out to our",
+      "support": "support",
+      "team": "team",
+      "download-permit": "Download your construction permit (.pdf)"
+    }
+  },
+  "application": {
+    "application-id": "Application ID",
+    "permit-applications": "My Construction Permit Applications",
+    "application-number": "Application #",
+    "application-details": "Application Details",
+    "overview": {
+      "heading": "Application Overview",
+      "title": "Construction Permit Application",
+      "description": "For a successful application, please ensure all required documents and information are provided accurately for the construction permit.",
+      "parcel-description": "Provide the Parcel ID of the construction site in your application.",
+      "identification-description": "Provide the contact information for the owner, contractor, and lead architect or engineer.",
+      "documents-description": "Uploaded documents should be digitally signed by each person that is identified during the second step - identification.",
+      "payment-fee": "The payment fee will be calculated after reviewing the application.",
+      "person-added": "Added a new person"
+    },
+    "parcel": {
+      "title": "Parcel ID",
+      "desc1": "Please enter the Parcel ID of proposed work site.",
+      "desc2": "Your Parcel ID can be found on property title, site plan, land cadastre or you can select via using the map.",
+      "placeholder": "What is the Parcel ID? (7-Digit Parcel ID)",
+      "select-from-map": "Select from the map",
+      "add-parcel-id": "Add Parcel ID",
+      "edit-parcel-id": "Edit Parcel ID",
+      "parcel-info": {
+        "title": "Parcel Information",
+        "placeholder": "Please enter the Parcel ID to see the parcel information.",
+        "parcel-number": "Parcel ID Number",
+        "coordinates": {
+          "title": "Coordinates",
+          "crd1": "40° 7' 24″ North",
+          "crd2": "82° 54' 48″ West"
+        },
+        "total-area": "The Total Area (sq.m):",
+        "floor-area-ratio": "Floor Area Ratio (FAR)",
+        "land-use-function": {
+          "title": "Land-use Function:",
+          "use": "Commercial + Residential"
+        },
+        "restrictions": {
+          "title": "Restrictions:",
+          "restr1": "Building Height",
+          "restr2": "Regulations Report",
+          "restr3": "2025 Master Plan of Digital Island"
+        }
+      }
+    },
+    "identification": {
+      "title": "Identification",
+      "roles": {
+        "role": "Your Role In The Project",
+        "select-role": "Select your role",
+        "property-owner": {
+          "role": "Property Owner",
+          "name": "Property Owner's Name",
+          "description": "property owner's",
+          "id": "Property Owner's ID"
+        },
+        "lead-architect-engineer": {
+          "role": "Lead Architect / Engineer",
+          "name": "Architect/Engineer’s Full Name",
+          "description": "lead architect's or engineer's",
+          "id": "Architect/Engineer’s ID"
+        },
+        "principal-contractor": {
+          "role": "Principal Contractor",
+          "name": "Contractor's Name",
+          "description": "principal contractor's",
+          "id": "Contractor's ID"
+        },
+        "other": {
+          "role": "Other",
+          "name": "Name",
+          "description": "other role's",
+          "id": "ID",
+          "add-explanation": "Other (Please add explanation)"
+        }
+      },
+      "contact-information": {
+        "title": "Your Contact Information",
+        "description": "Please check your information and update your contact details if necessary",
+        "name": "Name",
+        "phone": "Phone Number",
+        "id": "ID",
+        "email": "E-Mail",
+        "edit-details": "Edit contact details",
+        "add-details": "Add contact details"
+      },
+      "add-person": "Add Additional Person (Optional)",
+      "overview": {
+        "title": "Please review the contact information"
+      }
+    },
+    "documents": {
+      "title": "Documents",
+      "upload": {
+        "title": "Upload documents",
+        "desc1": "Please upload the following documents:",
+        "desc2": "Uploaded documents should be ",
+        "digitally-signed": "digitally signed",
+        "desc3": "collectively by each person provided during the identification.",
+        "select-file": "Select a file to upload",
+        "uploading": "Uploading ...",
+        "uploaded-documents": "Uploaded Documents",
+        "no-documents": "There are no documents",
+        "all-documents-uploaded": "All required documents are uploaded!"
+      },
+      "sent": {
+        "title": "Documents Submitted Successfully",
+        "description": "The requested documents have been successfully submitted and are now being reviewed by our team.",
+        "next-steps": "Next Steps"
+      }
+    },
+    "payment": {
+      "title": "Payment",
+      "successful": {
+        "title": "Your Payment was Successful!",
+        "desc1": "You will receive notifications regarding the final outcome of your application.",
+        "allow": "Please allow",
+        "3-to-10-days": "3 to 10 working days",
+        "desc2": "for the application review process to be completed.",
+        "thank-you": "Thank you for your patience."
+      },
+      "overview": {
+        "description": "This fee covers the processing and administrative costs with your construction permit application.",
+        "review-details": {
+          "title": "Please review the details below",
+          "site-visit": "Site visit",
+          "certificate-validation": "Validation of Certificates",
+          "record-creation": "Creation of records for requested construction permit",
+          "total": "Total"
+        },
+        "payment-options": {
+          "title": "Payment Options",
+          "description": "Please select a payment option to proceed",
+          "online": {
+            "title": "Online Payment Methods",
+            "debit": {
+              "title": "Debit/Credit Card",
+              "description": "Enter your bank details for payment."
+            },
+            "mobile": {
+              "title": "Mobile Money",
+              "description": "Enter your mobile money details for payment."
+            },
+            "wallet": {
+              "title": "Digital Wallet",
+              "description": "Enter your digital wallet details for payment."
+            }
+          },
+          "bank-transfer": {
+            "title": "Bank Transfer Payment",
+            "description": "For bank transfer payments, use the following account details",
+            "bank-name": "Bank Name: D. I.",
+            "account-holder": "Bank Account Holder: Digital Island City Planning Department",
+            "account-number": "Account Number: DI123456789123456",
+            "reference": "Reference: [Application Number]",
+            "desc1": "Please use your application number as the payment reference.",
+            "desc2": "Once you've made the payment, allow some processing time."
+          }
+        }
+      },
+      "ongoing": {
+        "title": "Receiving payment order...",
+        "please-wait": "Please wait!",
+        "process-time": "This process might take some time"
+      }
+    },
+    "inspection": {
+      "try-again": "Please try again",
+      "schedule": {
+        "title": "Thank You for Scheduling Your Site Inspection",
+        "appointment-details": "Your appointment has been successfully scheduled. Here are the details",
+        "description": "We appreciate your attention to this matter. If you require further assistance or any inquiries, please reach out to our support team."
+      }
+    },
+    "feedback": {
+      "title": "We need your Feedback!",
+      "description": "How would you rate your experience with our service?",
+      "experience": "Let us know about your experience",
+      "experience-description": "Did you accomplish what you intended to do in this session? Help us to understand what we can improve.",
+      "labels": {
+        "satisfied": "Very Satisfied",
+        "not-satisfied": "Not Satisfied"
+      },
+      "feedback-sent": {
+        "thank-you": "Thank You for Your Feedback!",
+        "desc1": "Your feedback is invaluable in helping us improve our services.",
+        "desc2": "We greatly appreciate your time and input. Your suggestions and comments contribute to making our processes better and more user-friendly."
+      }
+    },
+    "accordion": {
+      "application-review": {
+        "title": "1. Application Review",
+        "desc1": "Our team will carefully review the submitted information and documents to ensure they meet the necessary requirements and comply with regulations.",
+        "desc2": "You can track down your applications via ",
+        "desc3": "The processing time may vary depending on the complexity of your project and the volume of applications. You will receive notifications regarding the progress of your application."
+      },
+      "additional-requests": {
+        "title": "(Optional) Additional Requests / Site Inspection",
+        "description": "We may need more information from you. You will receive E-Mail notifications at key milestones of the application process, including approval, field visit requests, requests for additional information, or any other updates."
+      },
+      "required-fee": {
+        "title": "2. Required Fee",
+        "desc1": "Once your application is reviewed, the system will automatically calculate the required permit fee based on your project details. You will be notified to make the payment through our secure payment gateway.",
+        "desc2": "Estimated Fee: €120.20 - €1,301.50"
+      },
+      "outcome": {
+        "title": "3. Final Outcome",
+        "description": "Once the review process is complete, you will be notified of the final outcome of your application."
+      }
+    },
+    "submitted": {
+      "title": "Application Submitted Successfully",
+      "description": "Your application has been successfully submitted and is now under review by our team."
+    }
+  },
+  "inquiry": {
+    "inquiry-id": "Application ID",
+    "inquiry-number": "Application Overview #",
+    "inquiry-details": "Application Details",
+    "overview": {
+      "heading": "Application Overview",
+      "title": "High School Graduation Certificate Inquiry",
+      "description": "This page provides an overview of your high school certificate application. Follow the steps below to complete the process.",
+      "certificate-preferences": "Select how you want to receive your certificate: digital-only or both digital and physical copy",
+      "certificate-physical-copy": "If you choose physical copy, provide your delivery details or select a collection point.",
+      "payment-fee": "Make the payment for your certificate application. The fee will be based on your previous selections."
+    },
+    "certificate": {
+      "title": "High-School Certificate Task List",
+      "desc1": "Select how you want to receive your certificate: digital-only or both digital and physical copy.",
+      "desc2": "If you choose physical copy, provide your delivery details or select a collection point.",
+      "placeholder1": "What is your name on your birth certificate?",
+      "placeholder2": " What is your High School Student ID?",
+      "preferences": {
+        "title": "Certificate Preferences",
+        "option1": "Option 1",
+        "option2": "Option 2",
+        "description": "Please select your preferred certificate delivery method.",
+        "digital-only": "Digital Only",
+        "physical-copy": "Physical Copy",
+        "both": "Both Digital and Physical Copy"
+      },
+      "results": {
+        "title": "Certificate Application",
+        "status-succeeded": "Completed Successfully!",
+        "status-failed": "Failed",
+        "succeeded-msg1": "Congratulations! Your high school certificate application has been processed successfully.",
+        "succeeded-msg2": " We will process your request accordingly. You can find your digital certificate below.",
+        "succeeded-msg3": "If you've requested a physical copy, it will be delivered to your provided address or collection point as selected. You will receive notification in this regard.",
+        "download-certificate": "Download your Digital High-School Certificate",
+        "description": "If you selected physical copy, please provide your delivery details or select a collection point.",
+        "home-address": "Home Address",
+        "collection-point": "Collection Point",
+        "select-collection-point": "Select Collection Point",
+        "address-details": {
+          "city-region": "City/Region",
+          "postal-code": "Postal Code"
+        }
+      }
+    },
+    "identification": {
+      "heading": "High School Graduation Certificate ",
+      "edit": "Edit Identification",
+      "title": "Identification",
+      "description": "Provide the required details for your certificate application.",
+      "desc2": "Please provide following information. If you do not remember your student ID, please follow with: ",
+      "next1": "Next: Certificate Preferences",
+      "next2": "Next: Review",
+      "next3": "Next: Address Preferences",
+      "next4": "Next: Payment",
+      "alert": "I don't remember my student ID",
+      "student": {
+        "full-name": "Full Name:",
+        "to-home": "To Home Address",
+        "mother-name": "Mother's Name:",
+        "mother-maiden-name": "Mother's Maiden Name:",
+        "school-name": "School Name:",
+        "id": "Student ID:",
+        "year-of-graduation": "Year of Graduation:",
+        "city-region": "City/Region:",
+        "street-apt": "Street Address:",
+        "postal": "Postal Code:",
+        "email": "E-Mail:",
+        "phone": "Phone Number:"
+      },
+      "preferences": {
+        "title": "Certificate Preferences",
+        "edit": "Edit Preferences",
+        "question1": "Would you like to receive Physical Copy?",
+        "question2": "Where Would You Like to Collect Your Certificate?",
+        "desc1": "Choose your preference for receiving your high school certificate.",
+        "desc2": "Regardless of your choice, you will always receive a digital copy. Your selection will impact the payment fee amount.",
+        "desc3": "Please choose a Ministry of Education office for the collection of your high school certificate. Ensure you select the most convenient location for you.",
+        "select": "Select the Ministry of Education Office",
+        "selectbox": "Select the Office you would like to collect from",
+        "selection": "Prefered address",
+        "option1": "Yes, to my home address.",
+        "option2": "Yes, from nearest Ministry of Education Office.",
+        "option3": "No, I prefer to receive a digital copy only.",
+        "office1": "Ministry of Education Office 1",
+        "office2": "Ministry of Education Office 2",
+        "office3": "Ministry of Education Office 3"
+      }
+    },
+    "review": {
+      "title": "Review Your Information",
+      "important": "Important: Review your application and make sure all the provided information is correct before proceeding with payment."
+    },
+    "payment": {
+      "title": "Payment Preferences",
+      "method": "Selected Payment Method",
+      "edit": "Edit Payment Method",
+      "desc": "This fee covers the processing, transformation and administrative costs associated with your High School Certificate.",
+      "generate-certificate-fee": "Generate Certificate",
+      "printing-fee": "Printing Fee",
+      "creation-of-records": "Creation of Records",
+      "total": "Total",
+      "execute-payment": "Make Payment",
+      "successful": {
+        "title": "Your Payment was Successful!",
+        "desc1": "You will receive notifications regarding the final outcome of your application.",
+        "allow": "Please allow",
+        "3-to-10-days": "3 to 10 working days",
+        "desc2": "for the application review process to be completed.",
+        "thank-you": "Thank you for your patience."
+      },
+      "review": {
+        "title": "Review Your Payment Details",
+        "desc1": "Please review the payment details below before proceeding with the payment:",
+        "desc2": "The payment fee will be calculated after reviewing the application.",
+        "desc7": "Total"
+      },
+      "options": {
+        "title": "Payment Options",
+        "desc": "Please select a payment option to proceed",
+        "online": {
+          "title": "Online Payment Methods",
+          "debit": {
+            "title": "Debit/Credit Card",
+            "description": "Enter your bank details for payment."
+          },
+          "mobile": {
+            "title": "Mobile Money",
+            "description": "Enter your mobile money details for payment."
+          },
+          "wallet": {
+            "title": "Digital Wallet",
+            "description": "Enter your digital wallet details for payment."
+          }
+        },
+        "bank-transfer": {
+          "title": "Bank Transfer Payment",
+          "desc": "For bank transfer payments, use the following account details",
+          "bank-name": "Bank Name: D. I.",
+          "account-holder": "Bank Account Holder: Digital Island Ministry of Education",
+          "account-number": "Account Number: DI987654321987654",
+          "reference": "Reference: [Application Number]",
+          "desc1": "Please use your application number as the payment reference.",
+          "desc2": "Once you've made the payment, allow some processing time."
+        }
+      },
+      "overview": {
+        "description": "This fee covers the processing and administrative costs with your construction permit application.",
+        "review-details": {
+          "title": "Please review the details below",
+          "desc3": "Please review the details below before proceeding with the payment.",
+          "desc4": "Generating Certificate",
+          "desc5": "Printing",
+          "desc6": "Creation of records",
+          "site-visit": "Site visit",
+          "certificate-validation": "Validation of Certificates",
+          "record-creation": "Creation of records for requested construction permit",
+          "total": "Total"
+        }
+      }
+    },
+    "feedback": {
+      "title": "We need your Feedback!",
+      "description": "How would you rate your experience with our service?",
+      "experience": "Let us know about your experience",
+      "experience-description": "Did you accomplish what you intended to do in this session? Help us to understand what we can improve.",
+      "labels": {
+        "satisfied": "Very Satisfied",
+        "not-satisfied": "Not Satisfied"
+      },
+      "feedback-sent": {
+        "thank-you": "Thank You for Your Feedback!",
+        "desc1": "Your feedback is invaluable in helping us improve our services.",
+        "desc2": "We greatly appreciate your time and input. Your suggestions and comments contribute to making our processes better and more user-friendly."
+      }
+    },
+    "accordion": {
+      "application-review": {
+        "title": "1. Application Review",
+        "desc1": "Our team will carefully review the submitted information and documents to ensure they meet the necessary requirements and comply with regulations.",
+        "desc2": "You can track down your applications via ",
+        "desc3": "The processing time may vary depending on the complexity of your project and the volume of applications. You will receive notifications regarding the progress of your application."
+      },
+      "additional-requests": {
+        "title": "(Optional) Additional Requests / Site Inspection",
+        "description": "We may need more information from you. You will receive E-Mail notifications at key milestones of the application process, including approval, field visit requests, requests for additional information, or any other updates."
+      },
+      "required-fee": {
+        "title": "2. Required Fee",
+        "desc1": "Once your application is reviewed, the system will automatically calculate the required permit fee based on your project details. You will be notified to make the payment through our secure payment gateway.",
+        "desc2": "Estimated Fee: €120.20 - €1,301.50"
+      },
+      "outcome": {
+        "title": "3. Final Outcome",
+        "description": "Once the review process is complete, you will be notified of the final outcome of your application."
+      }
+    },
+    "submitted": {
+      "title": "Application Submitted Successfully",
+      "description": "Your application has been successfully submitted and is now under review by our team."
+    }
+  },
+  "applications-list": {
+    "description": "Here you can easily check the details and progress of all your submitted construction permit applications.",
+    "ongoing-applications": "Ongoing Applications",
+    "no-ongoing-applications": "There are no ongoing applications.",
+    "completed-applications": "Completed Applications",
+    "no-completed-applications": "There are no finalized permit applications at the moment."
+  },
+  "button": {
+    "home": "Home",
+    "login": "Log in",
+    "logout": "Log Out",
+    "my-applications": "My Applications",
+    "save-for-later": "Save for later",
+    "edit": "Edit",
+    "start": "Start",
+    "continue": "Continue",
+    "submit": "Submit",
+    "apply": "Apply",
+    "back": "Back",
+    "back-to-home": "Back to Home",
+    "skip-and-home": "Skip & Home",
+    "cancel": "Cancel",
+    "create-application": "Create application",
+    "generate-certificate": "Generate Certificate",
+    "create-new": "Create new application",
+    "delete-application": "Delete Application",
+    "delete-inquiry": "Delete Inquiry",
+    "download-permit": "Download Construction Permit",
+    "download-invoice": "Download Invoice",
+    "add-parcel": "Add Parcel ID",
+    "add-contact-details": "Add contact details",
+    "upload-documents": "Upload documents",
+    "add-to-calendar": "Add to calendar"
+  },
+  "status": {
+    "title": "Status",
+    "completed": "COMPLETED",
+    "approved": "APPROVED",
+    "rejected": "REJECTED",
+    "not-started": "NOT STARTED",
+    "draft": "DRAFT",
+    "in-progress": "IN PROGRESS",
+    "in-review": "IN REVIEW",
+    "action-needed": "ACTION NEEDED"
+  },
+  "actions": {
+    "payment": {
+      "title": "Payment Required",
+      "description": "To facilitate the processing of your application, please proceed with the payment of the required fee. Once payment is complete, your application will be forwarded to stakeholders for clearance"
+    },
+    "in-review": {
+      "title": "Application Under Review",
+      "desc1": "Your construction permit application is currently under review by our team. We're  assessing your submission to ensure compliance with all necessary regulations.",
+      "desc2": "You will receive updates on the progress via E-Mail and within your account. If you have any questions or need assistance, our support team is here to help."
+    }
+  },
+  "sidebar": {
+    "self-service": "Self Service",
+    "accessibility-settings": "Accessibility Settings",
+    "settings": "Settings",
+    "help": "Help"
+  },
+  "inactive-page": "This page is still inactive"
+}
