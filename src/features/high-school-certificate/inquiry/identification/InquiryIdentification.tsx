@@ -1,5 +1,5 @@
 import PlusIcon from "@assets/icons/plus.svg?react";
-import { Button, Flex, Grid, GridItem, Heading, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Grid, GridItem, Heading, Text } from "@chakra-ui/react";
 import { ChangeEvent, useEffect, useMemo, useReducer, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigate, useParams } from "react-router-dom";
@@ -284,41 +284,69 @@ export default function InquiryIdentification() {
         </GridItem>
 
         {/* Bottom Buttons */}
+        {/* Fixed action bar */}
         <Flex
-          marginTop="auto"
-          mb="20px"
+          maxW="container.lg"
+          mx="auto"
+          gap="10px"
           direction={{ base: "column", md: "row" }}
           w="100%"
-          gap="10px"
         >
           {step === 1 && (
-            <Button width="100%" onClick={handleContinue} isDisabled={!name && !idNumber} colorScheme="admin">
-              {t('button.continue')}
+            <Button
+              width="100%"
+              onClick={handleContinue}
+              isDisabled={!name && !idNumber}
+              colorScheme="admin"
+            >
+              {t("button.continue")}
             </Button>
           )}
           {step === 2 && (
             showAddressSubStep ? (
-              <Button width="100%" onClick={handleAddressContinue} colorScheme="admin" isDisabled={!selectedOfficeAddress}>
-                {t('button.continue')}
+              <Button
+                width="100%"
+                onClick={handleAddressContinue}
+                colorScheme="admin"
+                isDisabled={!selectedOfficeAddress}
+              >
+                {t("button.continue")}
               </Button>
             ) : (
-              <Button width="100%" onClick={handlePreferencesContinue} colorScheme="admin" isDisabled={!preferencesValue}>
-                {t('button.continue')}
+              <Button
+                width="100%"
+                onClick={handlePreferencesContinue}
+                colorScheme="admin"
+                isDisabled={!preferencesValue}
+              >
+                {t("button.continue")}
               </Button>
             )
           )}
           {step === 3 && (
-            <Button width="100%" onClick={handleReviewContinue} colorScheme="admin" isDisabled={!selectedPaymentMethod}>
-              {t('button.continue')}
+            <Button
+              width="100%"
+              onClick={handleReviewContinue}
+              colorScheme="admin"
+              isDisabled={!selectedPaymentMethod}
+            >
+              {t("button.continue")}
             </Button>
           )}
           {step === 4 && (
-            <Button width="100%" onClick={handleGoToPayment} colorScheme="admin" isDisabled={!selectedOfficeAddress}>
-              {t('button.continue')}
+            <Button
+              width="100%"
+              onClick={handleGoToPayment}
+              colorScheme="admin"
+              isDisabled={!selectedOfficeAddress}
+            >
+              {t("button.continue")}
             </Button>
           )}
         </Flex>
       </Grid>
+
+
     </Flex>
   );
 }

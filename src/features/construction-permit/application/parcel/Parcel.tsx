@@ -44,7 +44,7 @@ export default function Parcel() {
   useEffect(() => {
     if (storageApplication) {
       const application = JSON.parse(storageApplication) as Application;
-      setParcelId(application.parcelID);
+      setParcelId(application.parcelID ?? "");
       setApplication(application);
       const undoneID = application.identification.length > 0 && application.identification.length < 4;
       setIdInProgress(undoneID);
@@ -54,19 +54,19 @@ export default function Parcel() {
     }
   }, []);
 
-const handleContinue = () => {
-  if (application) application.parcelID = parcelId;
+  const handleContinue = () => {
+    if (application) application.parcelID = parcelId;
     setApplication(application);
     localStorage.setItem("application", JSON.stringify(application));
 
     if (application.identification.length < 1) navigate(`../${id}/identification`)
-    else if(application.pendingDocuments.length > 0) navigate(`../${id}/documents`);
+    else if (application.pendingDocuments.length > 0) navigate(`../${id}/documents`);
     else navigate(`../${id}`);
   }
 
 
-const handleSave = () => {
-  if (application) application.parcelID = parcelId;
+  const handleSave = () => {
+    if (application) application.parcelID = parcelId;
     setApplication(application);
     localStorage.setItem("application", JSON.stringify(application));
     navigate(`../${id}`);
@@ -76,27 +76,27 @@ const handleSave = () => {
     <>
       <Flex mb="30px" gap="20px" direction="column">
         <Grid
-            gap="20px"
-            templateAreas={{
-              xs: `"heading" "parcel"`,
-              sm: `"heading" "parcel"`,
-              md: `"heading parcel"`,
-            }}
-          >
+          gap="20px"
+          templateAreas={{
+            xs: `"heading" "parcel"`,
+            sm: `"heading" "parcel"`,
+            md: `"heading parcel"`,
+          }}
+        >
           <GridItem area="heading"
             gap="10px"
             flexDirection="column"
             display="flex">
             <Flex>
               <Text variant="title" size="md" mt="5px">
-               {t('application.overview.title')}{" "}
+                {t('application.overview.title')}{" "}
                 <span style={{ color: colors.secondary[600] }}>#{id}</span>
               </Text>
             </Flex>
             <Flex
               direction="column"
               alignSelf="bottom"
-              display={{base: "none", md: "flex"}}>
+              display={{ base: "none", md: "flex" }}>
               <StepStatus
                 id={application.id}
                 activeStep="parcel"
@@ -104,14 +104,14 @@ const handleSave = () => {
                   {
                     parcel: application.parcelID === "" ? Status.NOT_STARTED : Status.COMPLETED,
                     identification:
-                      identificationDone?Status.COMPLETED:(idInProgress?Status.IN_PROGRESS:Status.NOT_STARTED),
+                      identificationDone ? Status.COMPLETED : (idInProgress ? Status.IN_PROGRESS : Status.NOT_STARTED),
                     documents: (
                       application.action === "documentsRequired" &&
-                      application.pendingDocuments.length > 0
+                        application.pendingDocuments.length > 0
                         ? Status.IN_PROGRESS
                         : (application.documents.length == 0)
-                        ? Status.NOT_STARTED
-                        : (application.documents.length > 0 && application.pendingDocuments.length > 0)?Status.IN_PROGRESS:Status.COMPLETED)
+                          ? Status.NOT_STARTED
+                          : (application.documents.length > 0 && application.pendingDocuments.length > 0) ? Status.IN_PROGRESS : Status.COMPLETED)
                   }
                 }
               />
@@ -123,20 +123,20 @@ const handleSave = () => {
             </Heading>
             <Text>{t('application.parcel.desc1')}</Text>
             <Text size="sm">
-            {t('application.parcel.desc2')}
+              {t('application.parcel.desc2')}
             </Text>
             <Flex direction="column" gap="10px">
               <FormLabel>{t('application.parcel.title')}</FormLabel>
-              <Flex gap="10px" direction={{base:"column", md: "row"}}>
-                <FormControl width={{base: "100%", md:"70%"}}>
+              <Flex gap="10px" direction={{ base: "column", md: "row" }}>
+                <FormControl width={{ base: "100%", md: "70%" }}>
                   <Input
-                  maxLength={7}
-                  defaultValue={parcelId}
-                  onChange={(e) => setParcelId(e.target.value)}
-                  placeholder={t('application.parcel.placeholder')} />
+                    maxLength={7}
+                    defaultValue={parcelId}
+                    onChange={(e) => setParcelId(e.target.value)}
+                    placeholder={t('application.parcel.placeholder')} />
                 </FormControl>
-                <Button 
-                width={{base: "100%", md:"30%"}}
+                <Button
+                  width={{ base: "100%", md: "30%" }}
                   onClick={() => setMapOpened(true)}
                   variant="outline"
                   colorScheme="admin"
@@ -155,10 +155,10 @@ const handleSave = () => {
                 >
                   <VStack spacing="10px" alignItems="left">
                     <Text variant="title" size="lg">
-                    {t('application.parcel.parcel-info.title')}
+                      {t('application.parcel.parcel-info.title')}
                     </Text>
                     <Text>
-                    {t('application.parcel.parcel-info.placeholder')}
+                      {t('application.parcel.parcel-info.placeholder')}
                     </Text>
                   </VStack>
                 </Flex>
@@ -166,7 +166,7 @@ const handleSave = () => {
                 <>
                   <ListCard>
                     <Text variant="title" size="lg">
-                    {t('application.parcel.parcel-info.title')}
+                      {t('application.parcel.parcel-info.title')}
                     </Text>
                     <HStack w="100%">
                       <dl style={{ width: "50%" }}>
@@ -224,18 +224,18 @@ const handleSave = () => {
               )
             }
             <Grid
-                gap="10px"
-                w="100%"
-                gridAutoColumns={{base:"100%", md: "50%"}}
-                templateAreas={{
-                  base: `"a" "b"`,
-                  md: `"b a"`
+              gap="10px"
+              w="100%"
+              gridAutoColumns={{ base: "100%", md: "50%" }}
+              templateAreas={{
+                base: `"a" "b"`,
+                md: `"b a"`
               }}>
-              <Button gridArea="a" width="100%" colorScheme={(parcelId.length == 7)?"admin":"disabled"} disabled={(parcelId.length != 7)} onClick={() => (parcelId.length == 7)?handleContinue():""}>
+              <Button gridArea="a" width="100%" colorScheme={(parcelId.length == 7) ? "admin" : "disabled"} disabled={(parcelId.length != 7)} onClick={() => (parcelId.length == 7) ? handleContinue() : ""}>
                 {t('button.continue')}
               </Button>
               <Button gridArea="b" width="100%" onClick={() => handleSave()} variant="outline" colorScheme="admin">
-              {t('button.save-for-later')}
+                {t('button.save-for-later')}
               </Button>
             </Grid>
           </GridItem>
