@@ -1,4 +1,5 @@
 import { Box, FormLabel, Radio, RadioGroup, Stack, Text } from "@chakra-ui/react";
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
 type Option = { value: string; label: string };
@@ -39,6 +40,7 @@ export default function IdentificationPreferences({
                             >
                                 <Radio
                                     value={opt.value}
+                                    isDisabled={opt.value !== "office"}
                                     colorScheme="blue"
                                     size="lg"
                                 >

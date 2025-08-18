@@ -63,6 +63,17 @@ export default function IdentificationPaymentPreferences({
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
+    useEffect(() => {
+        const inquiry = readInquiry();
+        const m = inquiry.paymentMethod as PaymentMethod | undefined;
+        if (m === "card") setSelectedPaymentMethod("card");
+        else {
+            setSelectedPaymentMethod(null);
+            updateInquiryField("paymentMethod", null);
+        }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
+
     // Simple icon boxes
     const IconBox = ({ children }: { children: React.ReactNode }) => (
         <Flex
@@ -131,42 +142,48 @@ export default function IdentificationPaymentPreferences({
         method,
         icon,
         topDivider = false,
+        isDisabled = false,
     }: {
         title: string;
         desc: string;
         method: PaymentMethod;
         icon: React.ReactNode;
         topDivider?: boolean;
+        isDisabled?: boolean;
     }) => {
         const isChecked = selectedPaymentMethod === method;
+
         const choose = () => {
-            setSelectedPaymentMethod(method);         // update parent state
-            updateInquiryField("paymentMethod", method); // persist
+            if (isDisabled) return;           // ignore clicks
+            setSelectedPaymentMethod(method);
+            updateInquiryField("paymentMethod", method);
         };
+
         return (
             <Box>
                 {topDivider && <Divider opacity={0.2} />}
                 <Flex
                     role="button"
                     aria-label={title}
+                    aria-disabled={isDisabled}
+                    tabIndex={isDisabled ? -1 : 0}
                     align="center"
                     justify="space-between"
                     py={3}
                     gap={4}
-                    cursor="pointer"
+                    cursor={isDisabled ? "not-allowed" : "pointer"}
+                    opacity={isDisabled ? 0.5 : 1}
                     onClick={choose}
-                    _hover={{ bg: "gray.50" }}
+                    _hover={{ bg: isDisabled ? undefined : "gray.50" }}
                 >
                     <Flex align="center" gap={3}>
                         <IconBox>{icon}</IconBox>
                         <Flex direction="column" gap={0.5}>
                             <Text fontWeight="semibold">{title}</Text>
-                            <Text fontSize="sm" color="gray.600">
-                                {desc}
-                            </Text>
+                            <Text fontSize="sm" color="gray.600">{desc}</Text>
                         </Flex>
                     </Flex>
-                    <Radio isChecked={isChecked} pointerEvents="none" colorScheme="blue" />
+                    <Radio isChecked={isChecked} isDisabled={isDisabled} colorScheme="blue" />
                 </Flex>
             </Box>
         );
@@ -222,6 +239,7 @@ export default function IdentificationPaymentPreferences({
                     desc={t("inquiry.payment.options.online.mobile.description") || "Enter your mobile money details for payment."}
                     method="mobile_money"
                     icon={<MobileMoneyIcon />}
+                    isDisabled
                     topDivider
                 />
                 <OptionRow
@@ -229,6 +247,7 @@ export default function IdentificationPaymentPreferences({
                     desc={t("inquiry.payment.options.online.wallet.description") || "Enter your digital wallet details for payment."}
                     method="digital_wallet"
                     icon={<WalletIcon />}
+                    isDisabled
                     topDivider
                 />
             </Box>
