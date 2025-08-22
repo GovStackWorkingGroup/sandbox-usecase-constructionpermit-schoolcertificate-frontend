@@ -14,7 +14,7 @@ import SuccessfullyCompleted from "./Successfullly-Completed";
 export default function InquiryAction({
   applicationId,
 }: {
-  applicationId: string;
+  applicationId?: string;
 }) {
   const feeAmount = 5.5; // hardcoded
   const [nameOnCard, setNameOnCard] = useState("");

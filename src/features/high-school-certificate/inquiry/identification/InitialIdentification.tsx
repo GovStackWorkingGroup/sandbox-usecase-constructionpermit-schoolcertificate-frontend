@@ -28,7 +28,6 @@ export default function InitialIdentification({
   const fullNameInputRef = useRef<HTMLInputElement>(null);
   const idNumberInputRef = useRef<HTMLInputElement>(null);
 
-  // Clear only if value is still the placeholder
   const handleFullNameFocus = () => {
     if (name === placeholderFullName && fullNameInputRef.current) {
       setName('');
@@ -42,7 +41,7 @@ export default function InitialIdentification({
 
   function updateInquiryField(field: string, value: string) {
     const inquiry = JSON.parse(localStorage.getItem('inquiry') || '{}');
-    inquiry[field] = JSON.stringify(value);
+    inquiry[field] = value;
     localStorage.setItem('inquiry', JSON.stringify(inquiry));
   }
 
