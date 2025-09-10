@@ -60,7 +60,7 @@ export default function InquiryAction({
   // Payment form
   return (
     <Flex mt="10rem" w="100%" direction={{ base: "column", md: "row" }}>
-      <Box maxW="400px" mx="auto" p={4} borderWidth="1px" borderRadius="lg" bg="white">
+      <Box maxW="400px" mx="auto" p={4} borderWidth="1px" borderRadius="lg" bg="white" mt="-7rem">
         <Text fontSize="sm" color="gray.500">
           Application ID {applicationId}
         </Text>

@@ -25,7 +25,7 @@ export default function SuccessfullyCompleted({
 
     return (
         <>
-            <Flex mt="10rem" w="100%" direction={{ base: "column", md: "row" }}>
+            <Flex mt="2rem" w="100%" direction={{ base: "column", md: "row" }} >
                 <Box maxW="560px" mx="auto" p={4}>
                     <Heading as="h2" size="lg" mb={3}>
                         {t('inquiry.certificate.results.title')}
@@ -62,7 +62,7 @@ export default function SuccessfullyCompleted({
                     </Text>
                 </Box>
             </Flex>
-            <Flex mt="5rem" w="100%" direction={{ base: "column", md: "row" }}>
+            <Flex mb="5rem" w="100%" direction={{ base: "column", md: "row" }}>
                 <Grid
                     gap="10px"
                     w="100%"
