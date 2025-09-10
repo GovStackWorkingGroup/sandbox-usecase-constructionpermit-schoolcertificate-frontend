@@ -16,7 +16,12 @@ export default function IdentificationPaymentPreferences({
     selectedPaymentMethod,
     setSelectedPaymentMethod,
 }: IdentificationPaymentPreferencesProps) {
+
+    const inquiry = JSON.parse(localStorage.getItem("inquiry") || "{}");
+    
+    const feedbackPath = `/education/highschool-graduation-certificate/inquiries/review-inquiry/${inquiry.id}/feedback`;
     const { t } = useTranslation();
+    
     const navigate = useNavigate();
 
     // ---- fees (unchanged)
@@ -29,7 +34,7 @@ export default function IdentificationPaymentPreferences({
     const bankName = "D.I. Bank";
     const accountHolder = "Digital Island Ministry of Finance";
     const accountNumber = "DI23456789123474";
-    const reference = "[Certificate ID]";
+    const reference = inquiry.id || "N/A";
 
     // ---- storage helpers
     const readInquiry = () => {

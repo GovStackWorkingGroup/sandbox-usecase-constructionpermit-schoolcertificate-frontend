@@ -335,7 +335,7 @@
             "bank-name": "Bank Name: D. I.",
             "account-holder": "Bank Account Holder: Digital Island City Planning Department",
             "account-number": "Account Number: DI123456789123456",
-            "reference": "Reference: [Application Number]",
+            "reference": "Reference",
             "desc1": "Please use your application number as the payment reference.",
             "desc2": "Once you've made the payment, allow some processing time."
           }
@@ -534,10 +534,10 @@
         "bank-transfer": {
           "title": "Bank Transfer Payment",
           "desc": "For bank transfer payments, use the following account details",
-          "bank-name": "Bank Name: D. I.",
-          "account-holder": "Bank Account Holder: Digital Island Ministry of Education",
-          "account-number": "Account Number: DI987654321987654",
-          "reference": "Reference: [Application Number]",
+          "bank-name": "Bank Name",
+          "account-holder": "Bank Account Holder",
+          "account-number": "Account Number",
+          "reference": "Reference",
           "desc1": "Please use your application number as the payment reference.",
           "desc2": "Once you've made the payment, allow some processing time."
         }

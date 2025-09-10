@@ -12,6 +12,7 @@ import {
 import { DownloadIcon } from "@chakra-ui/icons";
 import { Link as RouterLink, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import jsPDF from "jspdf";
 
 export default function SuccessfullyCompleted({
     applicationId,
@@ -22,6 +23,21 @@ export default function SuccessfullyCompleted({
     const inquiry = JSON.parse(localStorage.getItem("inquiry") || "{}");
     const feedbackPath = `/education/highschool-graduation-certificate/inquiries/review-inquiry/${inquiry.id}/feedback`;
     const { t } = useTranslation();
+
+    const handleDownloadCertificate = () => {
+        const doc = new jsPDF();
+        doc.setFontSize(18);
+        doc.text("High School Graduation Certificate", 20, 20);
+        doc.setFontSize(12);
+        doc.text(`Name: ${inquiry.studentFullName || "N/A"}`, 20, 40);
+        doc.text(`Student ID: ${inquiry.studentID || "N/A"}`, 20, 50);
+        doc.text(`Certificate ID: ${inquiry.id || "N/A"}`, 20, 60);
+        doc.text(`Graduation Year: ${inquiry.graduationYear || "2019"}`, 20, 70);
+        doc.text(`Status: Successfully Completed`, 20, 80);
+        // Add more fields as needed
+
+        doc.save(`${inquiry.studentFullName}-graduation-certificate.pdf`);
+    };
 
     return (
         <>
@@ -45,10 +61,7 @@ export default function SuccessfullyCompleted({
                         <Icon as={DownloadIcon} color="blue.600" />
                         <ChakraLink
                             as="button"
-                            onClick={() => {
-                                // Simulate download – replace with actual file URL if you have one.
-                                // window.location.href = "/path/to/certificate.pdf";
-                            }}
+                            onClick={handleDownloadCertificate}
                             color="blue.600"
                             textDecoration="underline"
                             fontWeight="semibold"
