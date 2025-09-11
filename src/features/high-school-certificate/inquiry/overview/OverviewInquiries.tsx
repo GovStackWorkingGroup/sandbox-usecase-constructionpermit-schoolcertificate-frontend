@@ -223,7 +223,7 @@ export default function OverviewInquiries() {
               <Button
                 gridArea="c"
                 width="100%"
-                onClick={() => handleDelete()}
+                as={RouterLink} to="/"
                 variant="outline"
                 bg="white"
                 borderColor="red.500"

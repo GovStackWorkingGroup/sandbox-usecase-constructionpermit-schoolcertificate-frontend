@@ -118,7 +118,7 @@
       },
       "similar-services": {
         "title": "Similar Services",
-        "description": ""
+        "description": "To be added !"
       }
     },
     "approved": {
@@ -147,9 +147,10 @@
       },
       "required-fees": {
         "title": "Required Fees",
-        "description": "To be added !",
-        "desc1": "To be added !",
-        "payment-fee": "To be added !"
+        "generate-certificate": "Generate Certificate: 0.50€",
+        "printing-fee": "Printing fee: 0.50€",
+        "creation-records": "Creation of records: 4.50€",
+        "shipment-fee": "Shipment fee (if physical copy is selected): to be calculated based on delivery address"
       },
       "alternative-access-support": {
         "title": "Alternative Access and Support",
@@ -165,7 +166,7 @@
       },
       "similar-services": {
         "title": "Similar Services",
-        "description": "To be added"
+        "description": "To be added !"
       }
     },
     "approved": {

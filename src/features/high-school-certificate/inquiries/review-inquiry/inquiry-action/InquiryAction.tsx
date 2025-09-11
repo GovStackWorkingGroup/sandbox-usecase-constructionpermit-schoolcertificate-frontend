@@ -111,7 +111,7 @@ export default function InquiryAction({
           <Button colorScheme="blue" onClick={handlePayNow} isDisabled={!isFormValid}>
             Pay Now
           </Button>
-          <Button variant="outline" colorScheme="blue" onClick={() => window.history.back()}>
+          <Button variant="outline" colorScheme="info" onClick={() => window.history.back()}>
             Cancel
           </Button>
         </Flex>

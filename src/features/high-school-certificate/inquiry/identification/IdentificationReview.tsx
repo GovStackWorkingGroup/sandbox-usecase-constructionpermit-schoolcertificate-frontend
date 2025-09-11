@@ -38,7 +38,7 @@ export const IdentificationReview = ({ isMobile }: IdentificationReviewProps) =>
     const mothersNameMock = "Mary";
     const mothersMaidenNameMock = "Anderson";
     const schoolNameMock = "Digital Island High School";
-    const yearOfGraduationMock = "2021";
+    const yearOfGraduationMock = "2019";
     const cityRegionMock = "Islandville";
     const zipCodeMock = "54321";
     const phoneNumberMock = "+987-654-3210";
