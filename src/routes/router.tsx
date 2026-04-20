@@ -33,11 +33,6 @@ import InquiryIdentification from "../features/high-school-certificate/inquiry/i
 import ReviewApplication from "../features/construction-permit/applications/review-application/ReviewApplication";
 import InitialIdentification from "../features/construction-permit/application/identification/InitialIdentification";
 import { IdentificationReview } from "../features/high-school-certificate/inquiry/identification/IdentificationReview";
-import IdentificationShell from "../features/high-school-certificate/inquiry/identification/IdentificationShell";
-import IdentificationPaymentPreferences from "../features/high-school-certificate/inquiry/identification/IdentificationPaymentPreferences";
-import IdentificationPreferences from "../features/high-school-certificate/inquiry/identification/IdentificationPreferences";
-import IdentificationAddressPreferences from "../features/high-school-certificate/inquiry/identification/IdentificationAddressPreferences";
-import InquiryAction from "../features/high-school-certificate/inquiries/review-inquiry/inquiry-action/InquiryAction";
 export const router = createBrowserRouter([
   {
     path: "",
@@ -120,24 +115,29 @@ export const router = createBrowserRouter([
             element: <HighschoolGraduationCertificate />,
           },
           {
-            path: "highschool-graduation-certificate/inquiry",
-            element: <ProtectedRoute guard={isAuthenticatedGuard}><HighSchoolGraduationCertificateInquiry /></ProtectedRoute>,
-            children: [
-              {
-                element: <Inquiry />,        // must render <Outlet/>
-                children: [
-                  { path: ":id", element: <OverviewInquiries /> },
+            path: "highschool-graduation-certificate/inquiry/identification/review",
+            element: (
+              <ProtectedRoute guard={isAuthenticatedGuard} redirect="/login">
+                <IdentificationReview isMobile={false} />
+              </ProtectedRoute>
+            ),
 
-                  {
-                    path: ":id/identification", element: <IdentificationShell />, children: [
-                      { index: true, element: <InquiryIdentification /> },
-                      { path: "preferences", element: <IdentificationPreferences /> },
-                      { path: "preferences/address", element: <IdentificationAddressPreferences /> },
-                      { path: "payment", element: <IdentificationPaymentPreferences /> },
-                      { path: "review", element: <IdentificationReview isMobile={false} /> },
-                    ]
-                  },
+            children: [
+              { path: "review/", element: <IdentificationReview isMobile={false} /> },
+              { path: ":id/feedback", element: <Feedback /> },
+              { path: ":id/approved", element: <Approved /> },
+
+              {
+                path: ":id/payment",
+                element: <Payment />,
+                children: [
+                  { index: true, element: <PaymentOverview /> },
+                  { path: "bank-payment", element: <BankPayment /> },
                 ],
+              },
+              {
+                path: ":id/schedule-inspection",
+                element: <ScheduleInspection />,
               },
             ],
           },
@@ -152,9 +152,42 @@ export const router = createBrowserRouter([
               { path: "review-inquiry/:id", element: <ReviewInquiry /> },
               { path: "review-inquiry/:id/feedback", element: <FeedbackCertificate /> },
               { path: "review-inquiry/:id/approved", element: <Approved /> },
-              { path: "review-inquiry/:id/inquiry-action", element: <InquiryAction /> }, // ⬅️ new
+            ]
+          },
+          {
+            path: "highschool-graduation-certificate/inquiry",
+            element: (
+              <ProtectedRoute guard={isAuthenticatedGuard}>
+                <HighSchoolGraduationCertificateInquiry />
+              </ProtectedRoute>
+            ),
+            children: [
+              {
+                element: <Inquiry />,
+                children: [
+                  { path: ":id", element: <OverviewInquiries /> },
+                  { path: ":id/identification", element: <InquiryIdentification /> },
+                  { path: ":id/documents", element: <FileUpload /> },
+                  { path: ":id/documents/sent", element: <FilesSent /> },
+                  { path: ":id/sent", element: <InquirySent /> },
+                ],
+              },
             ],
-          }
+          },
+          {
+            path: "highschool-graduation-certificate/inquiry/:id",
+            element: (
+              <ProtectedRoute guard={isAuthenticatedGuard}>
+                <OverviewInquiries />
+              </ProtectedRoute>
+            ),
+            children: [
+              {
+                path: "identification",
+                element: <InquiryIdentification />,
+              },
+            ],
+          },
         ],
       }
     ],

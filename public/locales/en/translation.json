@@ -118,7 +118,7 @@
       },
       "similar-services": {
         "title": "Similar Services",
-        "description": "To be added !"
+        "description": ""
       }
     },
     "approved": {
@@ -147,10 +147,9 @@
       },
       "required-fees": {
         "title": "Required Fees",
-        "generate-certificate": "Generate Certificate: 0.50€",
-        "printing-fee": "Printing fee: 0.50€",
-        "creation-records": "Creation of records: 4.50€",
-        "shipment-fee": "Shipment fee (if physical copy is selected): to be calculated based on delivery address"
+        "description": "To be added !",
+        "desc1": "To be added !",
+        "payment-fee": "To be added !"
       },
       "alternative-access-support": {
         "title": "Alternative Access and Support",
@@ -166,7 +165,7 @@
       },
       "similar-services": {
         "title": "Similar Services",
-        "description": "To be added !"
+        "description": "To be added"
       }
     },
     "approved": {
@@ -336,7 +335,7 @@
             "bank-name": "Bank Name: D. I.",
             "account-holder": "Bank Account Holder: Digital Island City Planning Department",
             "account-number": "Account Number: DI123456789123456",
-            "reference": "Reference",
+            "reference": "Reference: [Application Number]",
             "desc1": "Please use your application number as the payment reference.",
             "desc2": "Once you've made the payment, allow some processing time."
           }
@@ -535,10 +534,10 @@
         "bank-transfer": {
           "title": "Bank Transfer Payment",
           "desc": "For bank transfer payments, use the following account details",
-          "bank-name": "Bank Name",
-          "account-holder": "Bank Account Holder",
-          "account-number": "Account Number",
-          "reference": "Reference",
+          "bank-name": "Bank Name: D. I.",
+          "account-holder": "Bank Account Holder: Digital Island Ministry of Education",
+          "account-number": "Account Number: DI987654321987654",
+          "reference": "Reference: [Application Number]",
           "desc1": "Please use your application number as the payment reference.",
           "desc2": "Once you've made the payment, allow some processing time."
         }

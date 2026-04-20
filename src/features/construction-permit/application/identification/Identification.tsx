@@ -74,7 +74,7 @@ export default function Identification() {
   };
 
   const handleAddPerson = () => {
-    return t('application.overview.person-added');
+    console.log(t('application.overview.person-added'));
   };
 
   const handleSave = () => {

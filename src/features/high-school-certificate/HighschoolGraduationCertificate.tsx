@@ -91,34 +91,19 @@ export default function HighSchoolGraduationCertificate() {
           </Text><br />
           <Accordion>
             <AccordionItem title={t('highschool-graduation-certificate.tabs.required-documents.title')}>
-              <Box as="ul" pl={4} style={{ listStyleType: 'disc' }}>
-               <li>
+              <>
                 <Text>
                   {t('inquiry.identification.title')}
                 </Text>
-                </li>
-                 <li>
                 <Text>
                   {t('inquiry.identification.preferences.selection')}
                 </Text>
-                </li>
-              </Box>
+              </>
             </AccordionItem>
             <AccordionItem title={t('highschool-graduation-certificate.tabs.required-fees.title')}>
-              <Box as="ul" pl={4} style={{ listStyleType: 'disc' }}>
-    <li>
-      <Text>{t('highschool-graduation-certificate.tabs.required-fees.generate-certificate')}</Text>
-    </li>
-    <li>
-      <Text>{t('highschool-graduation-certificate.tabs.required-fees.printing-fee')}</Text>
-    </li>
-    <li>
-      <Text>{t('highschool-graduation-certificate.tabs.required-fees.creation-records')}</Text>
-    </li>
-    <li>
-      <Text>{t('highschool-graduation-certificate.tabs.required-fees.shipment-fee')}</Text>
-    </li>
-  </Box>
+              <>
+                <Link href="#">{t('highschool-graduation-certificate.tabs.required-fees.payment-fee')}</Link>
+              </>
             </AccordionItem>
             <AccordionItem title={t('highschool-graduation-certificate.tabs.alternative-access-support.title')}>
               <>
@@ -128,7 +113,7 @@ export default function HighSchoolGraduationCertificate() {
               </>
             </AccordionItem>
             <AccordionItem title={t('highschool-graduation-certificate.tabs.similar-services.title')}>
-              <>{t('highschool-graduation-certificate.tabs.similar-services.description')}</>
+              <></>
             </AccordionItem>
           </Accordion>
         </GridItem>

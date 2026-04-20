@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useState } from "react";
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
     Accordion,
     AccordionItem,
@@ -38,7 +38,7 @@ export const IdentificationReview = ({ isMobile }: IdentificationReviewProps) =>
     const mothersNameMock = "Mary";
     const mothersMaidenNameMock = "Anderson";
     const schoolNameMock = "Digital Island High School";
-    const yearOfGraduationMock = "2019";
+    const yearOfGraduationMock = "2021";
     const cityRegionMock = "Islandville";
     const zipCodeMock = "54321";
     const phoneNumberMock = "+987-654-3210";
@@ -49,7 +49,7 @@ export const IdentificationReview = ({ isMobile }: IdentificationReviewProps) =>
     const printing = 0.5;
     const creationOfRecords = 4.5;
     const total = generatingCertificate + printing + creationOfRecords;
-    const { id } = useParams();
+
     // Load inquiry
     useEffect(() => {
         const raw = localStorage.getItem("inquiry");
@@ -152,12 +152,6 @@ export const IdentificationReview = ({ isMobile }: IdentificationReviewProps) =>
         </Box>
     );
 
-    const handleContinue = () => {
-        if (!id) return;
-        navigate(`/education/highschool-graduation-certificate/inquiries/review-inquiry/${id}/inquiry-action`);
-    };
-
-
     // Label for payment method
     const paymentLabel =
         (inquiry?.paymentMethod === "card" && (t("inquiry.payment.options.online.debit.title") || "Debit/Credit Card")) ||
@@ -171,7 +165,6 @@ export const IdentificationReview = ({ isMobile }: IdentificationReviewProps) =>
     const fullName = inquiry?.studentFullName || "";
     const studentId = inquiry?.studentID || "";
     const addressLine = inquiry?.studentAddress || "";
-
 
     return (
         <Flex direction="column" gap="20px" mb="20px" flexGrow={1}>
@@ -316,9 +309,6 @@ export const IdentificationReview = ({ isMobile }: IdentificationReviewProps) =>
 
             <Button colorScheme="admin" mt="auto" variant="outline" onClick={() => navigate(-1)}>
                 {t("button.back")}
-            </Button>
-            <Button colorScheme="admin" mt="auto" variant="outline" onClick={handleContinue}>
-                {t("button.continue")}
             </Button>
         </Flex>
     );
