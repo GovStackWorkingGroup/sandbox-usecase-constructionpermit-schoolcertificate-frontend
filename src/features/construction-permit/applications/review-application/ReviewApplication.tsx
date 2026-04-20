@@ -42,8 +42,7 @@ export default function ReviewApplication() {
     ],
   ];
 
-  // Accept broader role values (including roles from other modules) to avoid enum incompatibility
-  function RoleFormData(role: any) {
+  function RoleFormData(role: ROLE) {
     switch (role) {
       case ROLE.PROPERTY_OWNER:
         return {
@@ -73,11 +72,8 @@ export default function ReviewApplication() {
           name: t('application.identification.roles.other.name'),
           id: t('application.identification.roles.other.id')
         }
-      default:
-        // Gracefully ignore unsupported roles (e.g., HIGHSCHOOL_GRADUATE) in this view
-        return undefined;
+      }
     }
-  }
 
   return application && (
     <>

@@ -31,7 +31,7 @@ export default function FeedbackSent() {
             {t('application.feedback.feedback-sent.desc2')}
           </Text>
         </Flex>
-        <Flex mt="15rem" w="100%" direction={{ base: "column", md: "row" }}>
+        <Flex mt="30rem" w="100%" direction={{ base: "column", md: "row" }}>
 
           <Button
             as={RouterLink}

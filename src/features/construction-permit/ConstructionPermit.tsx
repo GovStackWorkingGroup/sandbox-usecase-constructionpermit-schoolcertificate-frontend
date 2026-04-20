@@ -193,7 +193,7 @@ export default function ConstructionPermit() {
               </>
             </AccordionItem>
             <AccordionItem title={t('construction-permit.tabs.similar-services.title')}>
-              <>{t(`construction-permit.tabs.similar-services.description`)}</>
+              <></>
             </AccordionItem>
           </Accordion>
         </GridItem>

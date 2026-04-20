@@ -88,7 +88,7 @@ export default function BankPayment() {
           <Button gridArea="a" colorScheme="admin" onClick={() => handlePayment()}>
             Pay Now
           </Button>
-          <Button gridArea="b" as={RouterLink} to="../" colorScheme="info" variant="outline">
+          <Button gridArea="b" as={RouterLink} to="../" colorScheme="admin" variant="outline">
             Cancel
           </Button>
         </Grid>

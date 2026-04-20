@@ -11,7 +11,7 @@ export default function HighschoolGraduationCertificateInquiry() {
     [t('topics.education.title'), null],
     [t('popular-services.highschool-graduation-certificate'), "/education/highschool-graduation-certificate"],
     [t('inquiry.certificate.title'), `/education/highschool-graduation-certificate/inquiry/`],
-    [`#${id}`, `/education/highschool-graduation-certificate/inquiry/${id}`],
+    [`#${id}`, `/education/highschool-graduation-certificate/identification/${id}`],
   ];
   return (
     <>
@@ -20,5 +20,3 @@ export default function HighschoolGraduationCertificateInquiry() {
     </>
   );
 }
-
-

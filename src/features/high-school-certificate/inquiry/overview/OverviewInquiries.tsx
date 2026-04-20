@@ -220,18 +220,7 @@ export default function OverviewInquiries() {
               <Button gridArea="b" width="100%" onClick={() => saveDraft()} as={RouterLink} to="/" variant="outline" colorScheme="admin">
                 {t('button.back-to-home')}
               </Button>
-              <Button
-                gridArea="c"
-                width="100%"
-                as={RouterLink} to="/"
-                variant="outline"
-                bg="white"
-                borderColor="red.500"
-                color="red.500"
-                _hover={{
-                  bg: "red.50" // light red background on hover
-                }}
-              >
+              <Button gridArea="c" width="100%" onClick={() => handleDelete()} variant="plain" color={colors.theme.info}>
                 {t('button.cancel')}
               </Button>
             </Grid>

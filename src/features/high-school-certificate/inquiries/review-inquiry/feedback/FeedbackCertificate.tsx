@@ -46,7 +46,7 @@ export default function FeedbackCertificate() {
           </FormControl>
 
           {/* Buttons right under the input */}
-          <Flex mt="1rem" w="100%" direction={{ base: "column", md: "row" }}>
+          <Flex mt="15rem" w="100%" direction={{ base: "column", md: "row" }}>
             <Grid
               gap="10px"
               w="100%"

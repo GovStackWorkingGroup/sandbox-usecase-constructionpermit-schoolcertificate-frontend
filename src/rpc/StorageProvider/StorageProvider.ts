@@ -10,10 +10,6 @@ export default class StorageProvider extends BaseProvider {
       return [];
   }
 
-  async getInquieries() {
-      return [];
-  }
-
   async getRecentActivity() {
     return [];
   }
