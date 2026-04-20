@@ -33,9 +33,6 @@ export default function Certificate() {
     certificateID: "",
     action: "inReview",
     identification: [],
-    documents: [],
-    pendingDocuments: [],
-    inspectionDate: ""
   });
   const navigate = useNavigate();
 
@@ -99,11 +96,13 @@ export default function Certificate() {
               display={{ base: "none", md: "flex" }}>
               <StepStatus
                 id={inquiry.id}
-                activeStep="certificate"
+                activeStep="preferences"
                 status={{
-                  certificate: inquiry.certificateID === "" ? Status.NOT_STARTED : Status.COMPLETED,
+                  preferences: inquiry.certificateID === "" ? Status.NOT_STARTED : Status.COMPLETED,
                   identification:
                     identificationDone ? Status.COMPLETED : (idInProgress ? Status.IN_PROGRESS : Status.NOT_STARTED),
+                  review: Status.NOT_STARTED,
+                  payment: Status.NOT_STARTED,
                 }}
               />
             </Flex>

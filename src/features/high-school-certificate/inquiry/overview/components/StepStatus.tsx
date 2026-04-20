@@ -61,6 +61,8 @@ export default function StepStatus({
     color: colors.status.grey,
   };
 
+  const getStepTo = (key: string) => key === "identification" ? "." : key === "preferences" ? "preferences" : key === "payment" ? "payment" : "review";
+
   return (
     <List h="100px">
       {steps.map((step) => {
@@ -75,9 +77,15 @@ export default function StepStatus({
                 : <RadioOFF style={{ width: "16px" }} />}
               <Link
                 as={RouterLink}
-                to={`../${id}/${step.key}`}
+                to={getStepTo(step.key)}
+                relative="path"                 // <-- important
                 color={colors.theme.primary}
                 fontWeight="semibold"
+                // If you want to block forward nav until prior steps are done, keep this:
+                style={{
+                  pointerEvents: status[step.key as keyof typeof status] === Status.NOT_STARTED ? "none" : undefined,
+                  opacity: status[step.key as keyof typeof status] === Status.NOT_STARTED ? 0.6 : 1,
+                }}
               >
                 {step.title}
               </Link>

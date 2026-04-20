@@ -148,4 +148,9 @@ export default class MockProvider extends BaseProvider {
       else resolve(localStorageVariable);
     });
   }
+
+  async getInquieries() {
+    // Mock implementation returning no inquiries
+    return [];
+  }
 }
