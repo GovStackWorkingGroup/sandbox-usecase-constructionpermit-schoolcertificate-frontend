@@ -45,14 +45,15 @@ fetch(
   `${import.meta.env.VITE_API_ENDPOINT}/api/v1/rpc-data/data`,
   {
     method: "POST",
-    // headers: {
-    //   "Content-Type": "application/json",
-    //   "Authorization": sessionStorage.getItem("token") ? (`Bearer ${sessionStorage.getItem("token")}`) : ("")
-    // },
     headers: {
       "Content-Type": "application/json",
-      "authorization": import.meta.env.VITE_TOKEN_ENDPOINT // <-- your working token
+      "Authorization": sessionStorage.getItem("token") ? (`Bearer ${sessionStorage.getItem("token")}`) : ("")
     },
+    //local testing using token from .env - remember to update the token in .env every 24 hours
+    // headers: {
+    //   "Content-Type": "application/json",
+    //   "authorization": import.meta.env.VITE_TOKEN_ENDPOINT // <-- your working token
+    // },
     body: JSON.stringify({
       "tenant": "construction-permit",
       "key": "applications"
