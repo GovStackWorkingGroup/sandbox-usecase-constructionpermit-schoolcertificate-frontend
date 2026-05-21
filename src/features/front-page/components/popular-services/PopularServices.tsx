@@ -32,7 +32,7 @@ export default function PopularServices() {
           <ListItem key={name} display="flex" alignItems={"center"}>
             <ListIcon as={ArrowForwardIcon} />
             <Link as={RouterLink} to={pathname || "/"}>
-              <Text>{name}</Text>
+              <Text fontWeight={index < 2 ? "bold" : "normal"}>{name}</Text>
             </Link>
           </ListItem>
         ))}
