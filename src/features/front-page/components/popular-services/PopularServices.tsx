@@ -28,7 +28,7 @@ export default function PopularServices() {
     <Flex direction="column" gap="10px" padding="10px 0">
       <Heading variant="headline">{t('popular-services.title')}</Heading>
       <List color={colors.theme.primary}>
-        {popularServices.map(([name, pathname]) => (
+        {popularServices.map(([name, pathname], index) => (
           <ListItem key={name} display="flex" alignItems={"center"}>
             <ListIcon as={ArrowForwardIcon} />
             <Link as={RouterLink} to={pathname || "/"}>
